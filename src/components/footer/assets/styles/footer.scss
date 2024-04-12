@@ -1,3 +1,22 @@
 .footer {
-    color: brown;
+    display: flex;
+    flex-direction: column;
+    height: 209px;
+    // padding: 66px 464px 29px 463px;
+    background: #000;
+
+    svg {
+        justify-content: center;
+        align-self: center;
+        margin: 3rem auto 2rem;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34.22px;
+        color: whitesmoke;
+        text-align: center;
+    }
 }

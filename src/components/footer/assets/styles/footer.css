@@ -1,3 +1,19 @@
 .footer {
-  color: brown;
+  display: flex;
+  flex-direction: column;
+  height: 209px;
+  background: #000;
+}
+.footer svg {
+  justify-content: center;
+  align-self: center;
+  margin: 3rem auto 2rem;
+}
+.footer__text {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.22px;
+  color: whitesmoke;
+  text-align: center;
 }/*# sourceMappingURL=footer.css.map */
