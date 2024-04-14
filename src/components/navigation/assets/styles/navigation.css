@@ -9,6 +9,6 @@
 .navigation__list li {
   padding-left: 2rem;
 }
-.navigation__list li:nth-child(1) a {
-  border-bottom: 1px solid black;
+.navigation .active {
+  text-decoration: underline;
 }/*# sourceMappingURL=navigation.css.map */

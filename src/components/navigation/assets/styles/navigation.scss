@@ -11,7 +11,7 @@
         padding-left: 2rem;
     }
 
-    &__list li:nth-child(1) a{
-        border-bottom: 1px solid black;
-    }
+    .active {
+        text-decoration: underline;
+      }
 }

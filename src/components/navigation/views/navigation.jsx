@@ -1,6 +1,6 @@
 import '../assets/styles/navigation.css'
 import '/src/index/assets/styles/index.css'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 function Navigation () {
     return <div className='navigation'>
@@ -14,10 +14,10 @@ function Navigation () {
             </svg>
             <ul className='navigation__list'>
                 <li className='navigation__listItem'>
-                <Link to='/'>Home</Link>
+                <NavLink to='/'>Home</NavLink>
                 </li>
                 <li className='navigation__listItem'>
-                    <Link to='a_propos'>A propos</Link>
+                    <NavLink to='a_propos'>A propos</NavLink>
                 </li>
             </ul>
         </nav>
