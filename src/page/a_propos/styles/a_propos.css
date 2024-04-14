@@ -1,0 +1,12 @@
+.propos__banner {
+  position: relative;
+  width: 1240px;
+  height: 223px;
+  box-shadow: 0px 0px 5px #181817;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+.propos__banner img {
+  width: 100%;
+}/*# sourceMappingURL=a_propos.css.map */
