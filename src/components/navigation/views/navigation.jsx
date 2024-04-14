@@ -1,5 +1,6 @@
 import '../assets/styles/navigation.css'
 import '/src/index/assets/styles/index.css'
+import {Link} from 'react-router-dom'
 
 function Navigation () {
     return <div className='navigation'>
@@ -13,10 +14,10 @@ function Navigation () {
             </svg>
             <ul className='navigation__list'>
                 <li className='navigation__listItem'>
-                    <a href="">Accueil</a>
+                <Link to='/'>Home</Link>
                 </li>
                 <li className='navigation__listItem'>
-                    <a href="">A Propos</a>
+                    <Link to='a_propos'>A propos</Link>
                 </li>
             </ul>
         </nav>
