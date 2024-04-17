@@ -1,4 +1,6 @@
 .propos {
+    display: flex;
+    flex-direction: column;
     &__banner {
         position: relative;
         width: 1240px;
