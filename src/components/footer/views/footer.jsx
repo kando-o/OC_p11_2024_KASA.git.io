@@ -10,7 +10,7 @@ function Footer () {
             <path d="M53.0946 28.9118V36.2203L56.1927 34.3931V27.0847L53.0946 28.9118Z" fill="white"/>
             <path d="M61.641 19.9909L48.9282 12.5749L41.8774 8.49078L34.9335 20.6358L35.0403 32.0284L47.6462 39.4444L48.9282 38.6921V27.9443L54.5902 17.9488L60.359 21.2806V32.0284L61.641 31.2761V19.9909Z" fill="white"/>
             </svg>
-            <p className='footer__text'>© 2020 Kasa. All rights reserved</p>
+            <p className='footer__text'>© 2024 Kasa. All rights reserved</p>
         </div>
     </>
 }
