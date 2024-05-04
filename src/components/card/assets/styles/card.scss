@@ -1,7 +1,17 @@
 .card {
+    position: relative;
     width: 340px;
     height: 340px;
     background: rgba(250, 95, 92, 0.949);
     margin: 2rem;
     border-radius: 10px;
+    color: whitesmoke;
+    
+    
+    p {
+        position: absolute;
+        align-self: flex-start;
+        padding: 2rem;
+        bottom: 0;
+    }
 }
