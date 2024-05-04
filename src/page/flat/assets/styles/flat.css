@@ -1,0 +1,76 @@
+.flat {
+  width: 100%;
+  height: 100%;
+}
+.flat__banner {
+  position: relative;
+  max-width: 1280px;
+  height: 223px;
+  box-shadow: 0px 0px 5px #181817;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+.flat__banner img {
+  width: 100%;
+  height: 100%;
+}
+.flat__info {
+  display: flex;
+  justify-content: space-between;
+}
+.flat__infoHost {
+  display: flex;
+  font-family: "Montserrat";
+  justify-content: space-between;
+}
+.flat__name {
+  width: 70px;
+  color: #FF6060;
+}
+.flat__title {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.flat__location {
+  margin-bottom: 1rem;
+}
+.flat__pP {
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0px 0px 5px;
+  border-radius: 50%;
+}
+.flat__tags {
+  display: flex;
+  gap: 10px;
+}
+.flat__tags p {
+  border-radius: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 115px;
+  gap: 0px;
+  background: #FF6060;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 700;
+}
+.flat__dropDown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flat__dropdownDescription, .flat__dropdownEquipement {
+  width: 47%;
+  padding: 0;
+  margin: 2rem auto;
+}
+
+.about__content {
+  padding: 0;
+}/*# sourceMappingURL=flat.css.map */
