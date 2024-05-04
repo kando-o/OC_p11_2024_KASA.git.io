@@ -19,6 +19,9 @@ function Navigation () {
                 <li className='navigation__listItem'>
                     <NavLink to='a_propos'>A propos</NavLink>
                 </li>
+                <li className='navigation__listItem'>
+                    <NavLink to='flat'>Flat</NavLink>
+                </li>
             </ul>
         </nav>
     </div>
