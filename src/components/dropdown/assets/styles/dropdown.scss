@@ -1,3 +1,7 @@
-.dropdown {
-    border: solid red 1px;
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 2rem;
+    gap: 3rem;
 }

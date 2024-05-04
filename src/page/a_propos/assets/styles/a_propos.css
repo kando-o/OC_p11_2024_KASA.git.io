@@ -3,15 +3,15 @@
   flex-direction: column;
 }
 .propos__banner {
+  position: relative;
+  max-width: 1280px;
+  height: 223px;
   box-shadow: 0px 0px 5px #181817;
-  overflow: hidden;
   border-radius: 2rem;
-  height: 260px;
+  overflow: hidden;
+  margin: 2rem auto;
 }
 .propos__banner img {
   width: 100%;
   height: 100%;
-}
-.propos__dropdown {
-  border: solid red;
 }/*# sourceMappingURL=a_propos.css.map */

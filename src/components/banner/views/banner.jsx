@@ -19,12 +19,12 @@ function Banner () {
                 <figcaption>
                     <p className='banner__textBorder'>Chez vous, partout et ailleurs</p>
                 </figcaption>
-        </figure> 
+            </figure> 
         }
 
         { BannerPropos && 
             <div className="propos__banner">
-                <img src="../public/assets/paysage_montagne.jpg" alt="Paysage de montagne" />
+                <img src="../public/assets/paysage_montagne.jpg" alt="Paysage de montagne blanch" />
             </div>
         }
 

@@ -1,0 +1,41 @@
+.collapser {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.collapser__title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.22px;
+  max-width: 1023px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(250, 95, 92, 0.949);
+  padding: 0.5rem;
+  border-radius: 5px 5px 0px 0px;
+  color: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+.collapser__title svg {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.collapser__text {
+  max-width: 1023px;
+  font-family: Montserrat;
+  background: #efeeee;
+  transform: scale(1, 0) translateY(-100%);
+  transition: 0.3s ease-in-out;
+  height: 0px;
+  opacity: 0;
+}
+.collapser.active .collapser__text {
+  padding: 0.5rem;
+  transform: scale(1, 1) translateY(0px);
+  height: 100%;
+  opacity: 1;
+}
+.collapser.active svg {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=collapser.css.map */
