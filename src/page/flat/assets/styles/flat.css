@@ -1,6 +1,9 @@
 .flat {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .flat__banner {
   position: relative;
@@ -18,59 +21,113 @@
 .flat__info {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
 }
-.flat__infoHost {
+@media screen and (min-width: 1024px) {
+  .flat__info {
+    flex-direction: row;
+  }
+}
+.flat__info__flat {
   display: flex;
-  font-family: "Montserrat";
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
 }
-.flat__name {
-  width: 70px;
-  color: #FF6060;
-}
-.flat__title {
+.flat__info__flat__title {
   color: #FF6060;
   font-family: Montserrat;
   font-size: 36px;
   font-weight: 500;
   text-align: left;
-  margin-bottom: 1rem;
 }
-.flat__location {
-  margin-bottom: 1rem;
+.flat__info__flat__location {
+  font-size: 16px;
 }
-.flat__pP {
-  width: 3rem;
-  height: 3rem;
-  box-shadow: 0px 0px 5px;
-  border-radius: 50%;
-}
-.flat__tags {
+.flat__info__flat__tags {
   display: flex;
   gap: 10px;
 }
-.flat__tags p {
-  border-radius: 2rem;
-  padding: 0.5rem;
+.flat__info__flat__tags__item {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
   text-align: center;
-  width: 115px;
-  gap: 0px;
+  min-width: 115px;
   background: #FF6060;
   color: whitesmoke;
   font-size: 14px;
   font-weight: 700;
 }
-.flat__dropDown {
+.flat__info__host {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Montserrat";
+  gap: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .flat__info__host {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+.flat__info__host__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.flat__info__host__user__name {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  color: #FF6060;
+  font-size: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .flat__info__host__user__name {
+    font-size: 24px;
+  }
+}
+.flat__info__host__user__avatar {
+  flex: 0 0 auto;
+  height: 2rem;
+  box-shadow: 0px 0px 5px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .flat__info__host__user__avatar {
+    height: 4rem;
+  }
+}
+.flat__info__host__score {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .flat__info__host__score {
+    font-size: 24px;
+  }
+}
+.flat__collapsers {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1rem;
 }
-.flat__dropdownDescription, .flat__dropdownEquipement {
-  width: 47%;
-  padding: 0;
-  margin: 2rem auto;
+.flat__collapsers .collapser {
+  flex: unset;
 }
-
-.about__content {
-  padding: 0;
+@media screen and (min-width: 768px) {
+  .flat__collapsers .collapser {
+    flex: 1;
+  }
 }/*# sourceMappingURL=flat.css.map */

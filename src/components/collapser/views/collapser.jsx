@@ -3,11 +3,6 @@ import "../assets/styles/collapser.css"
 import PropTypes from 'prop-types'
 
 function Collapser ({title, children}) {
-    Collapser.propTypes = {
-        title: PropTypes.string.isRequired,
-        children: PropTypes.object.isRequired
-    };
-
     const [open, setOpen] = useState(false)
 
     const handleOpen = () => {
@@ -28,5 +23,10 @@ function Collapser ({title, children}) {
     </div>
     )
 }
+
+Collapser.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.object.isRequired
+};
 
 export default Collapser

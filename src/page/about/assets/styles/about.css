@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about .propos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (max-width: 1240px) {
+  .about .propos__banner {
+    margin: 0 2rem;
+  }
+}/*# sourceMappingURL=about.css.map */

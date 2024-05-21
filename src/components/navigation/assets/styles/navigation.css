@@ -1,14 +1,44 @@
 .navigation {
+  max-width: 1440px;
   width: 100%;
-  padding: 2rem;
-}
-.navigation__list, .navigation nav {
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
 }
-.navigation__list li {
-  padding-left: 2rem;
+@media screen and (min-width: 768px) {
+  .navigation {
+    width: 100%;
+  }
+}
+.navigation .logo {
+  width: 145px;
+}
+@media screen and (min-width: 768px) {
+  .navigation .logo {
+    width: 175px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navigation .logo {
+    width: 210px;
+  }
+}
+.navigation__list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .navigation .active {
   border-bottom: 2px red solid;
+}
+@media screen and (max-width: 767.98px) {
+  .navigation__listItem a {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }/*# sourceMappingURL=navigation.css.map */

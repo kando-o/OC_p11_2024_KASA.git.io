@@ -7,7 +7,7 @@ function Card () {
     const [cards, setData] = useState(null)
 
     useEffect(() => {
-        fetch('./src/data/data.json')
+        fetch('/data/data.json')
         .then(response => response.json())
         .then(jsonData => {
             setData(jsonData)
@@ -19,8 +19,9 @@ function Card () {
     return <>
     {cards &&
             cards.map(card => (
-                <Link to={`/flat?id=${card.id}&title=${card.title}&location=${card.location}&host=${card.host.name}`} className="card-link" key={card.id}>
+                <Link to={`/flat/${card.id}`} className="card-link" key={card.id}>
                     <div className="card" key={card.id}>
+                        <img src={card.pictures[0]} />
                         <p> {card.title}</p>
                     </div>
                 </Link>

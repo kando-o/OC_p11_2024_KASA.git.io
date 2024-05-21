@@ -1,0 +1,39 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100dvh;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+    
+    &_header {
+        width: 100%;
+        height: 168px;
+        box-sizing: border-box;
+        padding: 0 50px;
+        @media screen and (max-width: 767.98px) {
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 767.98px) {
+            height: 88px;
+        }
+    }
+
+    &_main {
+        width: 100%;
+        min-height: calc(100dvh - 408px);
+        padding: 0 50px;
+        @media screen and (max-width: 767.98px) {
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 767.98px) {
+            min-height: calc(100dvh - 337px);
+        }
+    }
+
+    &_footer {
+        width: 100%;
+        height: 209px;
+    }
+}

@@ -1,11 +1,1 @@
-:root {
-  --heightFooter: 208px;
-  --heightBanner: 100px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - var(--heightBanner) - var(--heightFooter));
-  padding: 2rem;
-}/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=app.css.map */

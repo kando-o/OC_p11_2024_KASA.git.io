@@ -1,11 +1,12 @@
-:root {
-    --heightFooter: 208px;
-    --heightBanner: 100px;
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+       @content;
+    }
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - var(--heightBanner) - var(--heightFooter));
-    padding: 2rem;
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+       @content;
+    }
 }
+

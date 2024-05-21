@@ -1,39 +1,23 @@
-import { useLocation } from 'react-router-dom'
-
 import '../assets/styles/banner.css'
 import '/public/assets/themes/fonts.css'
+import PropTypes from "prop-types"
 
-function Banner () {
+function Banner ({imageUrl, text}) {
 
-    const {pathname} = useLocation()
+    return <figure className='banner'>
+        <img src={imageUrl}  alt={text ?? "bannière du site"} />
+        {text && (<div className="banner__opacity"></div>)}
+        <figcaption>
+            {text && (
+                <p className='banner__textBorder'>{text}</p>
+            )}
+        </figcaption>
+    </figure> 
+}
 
-    const BannerHome = pathname === "/"
-    const BannerPropos = pathname === "/a_propos"
-    const BannerFlat = pathname === "/flat"
-
-    return <>
-        {BannerHome && 
-            <figure className='banner'>
-                <img src="/public/assets/imgBanner.png"  alt="paysage de montagne"  />
-            <div className="banner__opacity"></div>
-                <figcaption>
-                    <p className='banner__textBorder'>Chez vous, partout et ailleurs</p>
-                </figcaption>
-            </figure> 
-        }
-
-        { BannerPropos && 
-            <div className="propos__banner">
-                <img src="../public/assets/paysage_montagne.jpg" alt="Paysage de montagne blanch" />
-            </div>
-        }
-
-        { BannerFlat && 
-            <div className="flat__banner">
-                <img src="../public/assets/banner_flat.jpg" alt="Visuel de salon" />
-            </div>
-        }
-    </>
+Banner.propTypes = {
+    imageUrl: PropTypes.string.isRequired,
+    text: PropTypes.string
 }
 
 export default Banner

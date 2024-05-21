@@ -1,14 +1,30 @@
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin descktop {
+    @media screen and (min-height: 1080px) {
+        @content;
+    }
+}
+
 .galerie {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1440px;
-    height: 829px;
-    background: #F6F6F6;
+    display: grid;
     border-radius: 2rem;
-    box-shadow: 0px 0px 5px ;
-    margin: 2rem auto;
-    gap: 2rem;
-    padding: 2rem;
-    overflow-y:scroll;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+
+    @include tablet {
+        gap: 60px;
+        padding: 50px;
+        background: #F6F6F6;
+        width: 100%;
+    }
+
+    @include descktop {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 }

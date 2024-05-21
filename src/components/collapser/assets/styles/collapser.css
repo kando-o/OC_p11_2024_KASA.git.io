@@ -1,19 +1,21 @@
 .collapser {
   display: flex;
+  max-width: 1023px;
   flex-direction: column;
   width: 100%;
+  flex: 1;
+  margin: 0 auto;
 }
 .collapser__title {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 700;
   line-height: 34.22px;
-  max-width: 1023px;
   display: flex;
   justify-content: space-between;
   background: rgba(250, 95, 92, 0.949);
   padding: 0.5rem;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px;
   color: whitesmoke;
   transition: 0.3s ease-in-out;
 }
